@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const db = {};
 db.mongoose = mongoose;
-db.url = process.env.MONGODB || 'mongodb+srv://mongoigti:040283hA@cluster0.2rxb2.mongodb.net/IGTI?retryWrites=true&w=majority';
+db.url = process.env.MONGODB;
 
 const gradeSchema = db.mongoose.Schema({
     name: {
