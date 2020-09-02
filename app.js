@@ -7,7 +7,7 @@ import { db } from './models/index.js';
 
 (async () => {
   try {
-    await db.mongoose.connect(db.url, {
+    await db.mongoose.connect(db.url || 'mongodb+srv://mongoigti:040283hA@cluster0.2rxb2.mongodb.net/IGTI?retryWrites=true&w=majority', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
